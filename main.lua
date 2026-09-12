@@ -1,4 +1,6 @@
 -- =================================================
+
+-- =================================================
 -- VIETNAM KID HUB | UPDATE 30 MONETIZED EDITION
 -- =================================================
 
@@ -578,7 +580,7 @@ local function LoadMainHub()
     LogoGui.Name = "VietNamKidLogoGui"
     LogoGui.Parent = game:GetService("CoreGui") or game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-    LogoBtn = Instance.new("ImageButton")
+    local LogoBtn = Instance.new("ImageButton")
     LogoBtn.Parent = LogoGui
     LogoBtn.Size = UDim2.new(0, 50, 0, 50)
     LogoBtn.Position = UDim2.new(0.9, -10, 0.4, 0)
@@ -614,5 +616,5 @@ BtnCheck.MouseButton1Click:Connect(function()
     else
         Status.TextColor3 = Color3.fromRGB(255, 100, 100)
         Status.Text = "Key Sai hoặc đã Hết Hạn!"
-    end
+    end 
 end)
